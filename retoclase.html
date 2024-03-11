@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="--descripcion" content="Formularios">
+    <link rel="stylesheet" href="RetoClase.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Reto Formularios JS</title>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" type="text" id="nombre" onfocusout="convertir()">
+                    <br>
+                    <label>Apellido</label>
+                    <input class="form-control" type="text" id="apellido" onchange="actboton()">
+                    <br>
+                    <label>¿Desea registrarse en el concurso?</label>
+
+                    <div class="form-check">           
+                        <input class="form-check-input" type="radio" id="radio1" onchange="registro()">
+                        <label class="form-check-label">Sí</label>
+                        <br>
+                        <input class="form-check-input" type="radio" id="radio2" onchange="registro()">
+                        <label class="form-check-label">No</label>
+                        </div>
+                        <div id="si_registro"></div>
+                        <br>
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="email">
+                        <br>
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fechanaci">
+                        <br>
+                        <label>Contraseña</label>
+                        <input type="password" id="password" placeholder="********" class="form-control"
+                             onfocusout="validar()" required>
+                        <br>
+                        <label>Confirmar contraseña</label>
+                        <input type="password" id="password1" placeholder="********" class="form-control"
+                        onfocusout="validar()" required>
+                        <br>                                                                               
+                        <button type="submit" class="btn btn-success" disabled id="boton">
+                            Enviar
+                        </button>                   
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        
+        </div>
+        <script src="RetoClase.js"></script>
+    </body>
+</html>
+
+            
